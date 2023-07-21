@@ -1,0 +1,17 @@
+*.DS_Store
+*.env
+*.vscode
+
+
+
+db.sqlite3
+db.sqlite3-journal
+
+
+__pycache__/
+venv/
+# media/
+
+project-ideas.txt
+
+
