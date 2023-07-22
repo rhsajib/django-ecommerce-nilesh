@@ -1,0 +1,84 @@
+{% load static %}
+
+{% comment %} <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top"> {% endcomment %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'app/images/Neel.png' %}" width="70" height="50" alt="">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'app:home' %}">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Milk</a></li>
+              <li><a class="dropdown-item" href="#">Curd</a></li>
+              <li><a class="dropdown-item" href="#">Milkshake</a></li>
+              <li><a class="dropdown-item" href="#">Lassi</a></li>
+              <li><a class="dropdown-item" href="#">Ghee</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Search</button>
+        </form>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link active dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rashed
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Orders</a></li>
+              <li><a class="dropdown-item" href="#">Change Password</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>              
+            </ul>
+  
+          </li class="nav-item mx-2">
+          <a class="nav-link active" href="#">Curt 4</a>
+          <li>
+  
+          </li class="nav-item mx-2">
+          <a class="nav-link active" href="#">Wish List</a>
+          <li>
+  
+          </li class="nav-item mx-2">
+          <a class="nav-link active" href="#">Login</a>
+          <li>
+  
+          </li class="nav-item mx-2">
+          <a class="nav-link active" href="#">Register</a>
+          <li>
+  
+          </li>
+  
+        </ul>
+      </div>
+    </div>
+</nav>
